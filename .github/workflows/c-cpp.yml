@@ -1,0 +1,99 @@
+//bruh
+
+#include <iostream>
+
+using namespace std;
+
+void p()
+{
+    int a;
+    int b;
+    cout << "Enter first number:";
+    cin >> a;
+    cout << "Enter second number:";
+    cin >> b;
+    cout << "a+b=";
+    int c;
+    c = a + b;
+    cout << c << endl;
+}
+void m()
+{
+    int a;
+    int b;
+    cout << "Enter first number:";
+    cin >> a;
+    cout << "Enter second number:";
+    cin >> b;
+    cout << "a-b=";
+    int c;
+    c = a - b;
+    cout << c << endl;
+}
+void umnozhit()
+{
+    int a;
+    int b;
+    cout << "Enter first number:";
+    cin >> a;
+    cout << "Enter second number:";
+    cin >> b;
+    cout << "a * b =" << endl;
+    int c;
+    c = a * b;
+    cout << c << endl;
+}
+void delitb()
+{
+    int a;
+    int b;
+    cout << "Enter first number:";
+    cin >> a;
+    cout << "Enter second number:";
+    cin >> b;
+    if (b != 0)
+    {
+        int c;
+        cout << "a/b=";
+        c = a / b;
+        cout << c << endl;
+    }
+    else
+    {
+        cout << "err: bad input";
+    }
+}
+
+int main()
+{
+    int input;
+
+    cout << "1. Slozhit\n";
+    cout << "2. Vichest\n";
+    cout << "3. Umnozhit\n";
+    cout << "4. Delit\n";
+    cout << "5. Exit\n";
+    cout << "Selection: ";
+    cin >> input;
+    switch (input) {
+    case 1:
+        p();
+        break;
+    case 2:
+        m();
+        break;
+    case 3:
+        umnozhit();
+        break;
+    case 4:
+        delitb();
+        break;
+    case 5:
+        cout << "Nice try!";
+        break;
+    default:
+        cout << "Error, bad input, quitting\n";
+        break;
+    }
+    cin.get();
+}
